@@ -1,0 +1,300 @@
+/* Global Reset */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Navbar Main */
+.navbar{
+  width:100%;
+  background: linear-gradient(135deg,#1e3c72,#2a5298);
+  padding:12px 0;
+  position:sticky;
+  top:0;
+  z-index:1000;
+  box-shadow:0 3px 10px rgba(0,0,0,0.2);
+}
+
+/* Container */
+.navbar-container{
+  width:90%;
+  margin:auto;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+/* Logo */
+.navbar-logo .logo-link{
+  text-decoration:none;
+  font-size:22px;
+  font-weight:bold;
+  color:white;
+  letter-spacing:1px;
+  transition:0.3s;
+}
+
+.logo-link:hover{
+  color:#ffd700;
+}
+
+/* Menu */
+.nav-menu{
+  list-style:none;
+  display:flex;
+  gap:25px;
+}
+
+/* Menu Item */
+.nav-item{
+  position:relative;
+}
+
+/* Links */
+.nav-link{
+  text-decoration:none;
+  color:white;
+  font-size:16px;
+  font-weight:500;
+  padding:8px 12px;
+  border-radius:5px;
+  transition:all 0.3s ease;
+  background:none;
+  border:none;
+  cursor:pointer;
+}
+
+/* Hover effect */
+.nav-link:hover{
+  background:rgba(255,255,255,0.15);
+  color:#ffd700;
+}
+
+/* Dropdown */
+.nav-item-dropdown{
+  position:relative;
+}
+
+.dropdown-btn{
+  background:none;
+  border:none;
+}
+
+/* Dropdown Menu */
+.dropdown-menu{
+  position:absolute;
+  top:38px;
+  left:0;
+  background:white;
+  list-style:none;
+  border-radius:6px;
+  overflow:hidden;
+  min-width:140px;
+  box-shadow:0 4px 12px rgba(0,0,0,0.15);
+  display:none;
+}
+
+/* Dropdown Items */
+.dropdown-item{
+  width:100%;
+}
+
+.dropdown-link{
+  display:block;
+  padding:10px 14px;
+  text-decoration:none;
+  color:#333;
+  font-size:15px;
+  transition:0.3s;
+}
+
+.dropdown-link:hover{
+  background:#2a5298;
+  color:white;
+}
+
+/* Show dropdown on hover */
+.nav-item-dropdown:hover .dropdown-menu{
+  display:block;
+}
+
+/* Responsive */
+@media (max-width:768px){
+
+  .navbar-container{
+    flex-direction:column;
+    align-items:flex-start;
+  }
+
+  .nav-menu{
+    flex-direction:column;
+    width:100%;
+    gap:10px;
+    margin-top:10px;
+  }
+
+  .nav-link{
+    width:100%;
+  }
+
+  .dropdown-menu{
+    position:static;
+    box-shadow:none;
+  }
+
+}
+
+
+
+/* ---------- GLOBAL PAGE BACKGROUND ---------- */
+
+body{
+  margin:0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background:#f3f6fb;
+}
+
+/* ---------- CONTAINER (used by both pages) ---------- */
+
+.registration-container,
+.login-container{
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:40px 20px;
+}
+
+/* ---------- CARD DESIGN ---------- */
+
+.registration-card,
+.login-card{
+  width:420px;
+  background:white;
+  padding:35px 40px;
+  border-radius:12px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.08);
+  border:1px solid #e6e9ef;
+}
+
+/* ---------- TITLES ---------- */
+
+.registration-card h1,
+.login-card h1{
+  text-align:center;
+  font-size:24px;
+  margin-bottom:25px;
+  color:#1f2937;
+  font-weight:600;
+}
+
+/* ---------- FORM LAYOUT ---------- */
+
+.registration-form,
+.login-form{
+  display:flex;
+  flex-direction:column;
+  gap:16px;
+}
+
+/* ---------- INPUT GROUP ---------- */
+
+.form-group{
+  display:flex;
+  flex-direction:column;
+}
+
+.form-group label{
+  font-size:13px;
+  font-weight:500;
+  color:#374151;
+  margin-bottom:5px;
+}
+
+/* ---------- INPUTS ---------- */
+
+.form-group input,
+.form-group select{
+  padding:11px;
+  border-radius:6px;
+  border:1px solid #d1d5db;
+  font-size:14px;
+  background:white;
+  transition:all 0.2s ease;
+}
+
+/* placeholder */
+
+.form-group input::placeholder{
+  color:#9ca3af;
+}
+
+/* focus effect */
+
+.form-group input:focus,
+.form-group select:focus{
+  outline:none;
+  border-color:#2563eb;
+  box-shadow:0 0 0 3px rgba(37,99,235,0.12);
+}
+
+/* ---------- BUTTON ---------- */
+
+.submit-btn{
+  margin-top:10px;
+  padding:12px;
+  background:#2563eb;
+  border:none;
+  border-radius:6px;
+  color:white;
+  font-size:15px;
+  font-weight:500;
+  cursor:pointer;
+  transition:all 0.25s ease;
+}
+
+/* hover */
+
+.submit-btn:hover{
+  background:#1d4ed8;
+  transform:translateY(-1px);
+}
+
+/* ---------- ERROR MESSAGE ---------- */
+
+.error-message{
+  font-size:13px;
+  padding:10px;
+  background:#ffeaea;
+  border-left:4px solid red;
+  border-radius:5px;
+}
+
+/* ---------- SMALL TEXT ---------- */
+
+.login-card p{
+  font-size:12px;
+  text-align:center;
+  color:#6b7280;
+}
+
+/* ---------- MOBILE ---------- */
+
+@media(max-width:500px){
+
+.registration-card,
+.login-card{
+  width:100%;
+  padding:25px;
+}
+
+.registration-card h1,
+.login-card h1{
+  font-size:20px;
+}
+
+}
+
+
