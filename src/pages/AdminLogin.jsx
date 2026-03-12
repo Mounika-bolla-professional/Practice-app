@@ -58,9 +58,7 @@ const AdminLogin = () => {
     <div className="login-container">
       <div className="login-card">
         <h1>Admin Login</h1>
-        <p style={{ textAlign: 'center', fontSize: '12px', color: '#e8dede', marginBottom: '15px' }}>
-          Demo Credentials - Username: mounika | Password: admin
-        </p>
+        
         {error && <div className="error-message" style={{ color: 'red', marginBottom: '10px', padding: '10px', backgroundColor: '#ffe6e6', borderRadius: '4px' }}>{error}</div>}
         <form onSubmit={handleSubmit} className="login-form">
           <div className="form-group">
