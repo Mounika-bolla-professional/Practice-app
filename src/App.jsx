@@ -44,11 +44,11 @@ function App() {
   }, []);
 
   return (
-     <BrowserRouter>
+     <HashRouter>
          {isAdmin && <AdminNavBar/>}
         
          {!isAdmin &&   <MainNavBar/>}
-     </BrowserRouter>
+     </HashRouter>
   );
 }
 
