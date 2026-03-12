@@ -1,4 +1,4 @@
-import { BrowserRouter, HashRouter} from 'react-router-dom';
+import { HashRouter} from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import './App.css';
 import MainNavBar from './pages/MainNavbar';
