@@ -11,7 +11,7 @@ export default function ViewCustomers() {
   }, []);
 
   const handleDelete = (customerId) => {
-    if (window.confirm(`Are you sure you want to delete customer with ID ${customerId}? This action cannot be undone.`)) {
+    if (window.confirm(` sure you want to delete customer  ID ${customerId}? This action cannot be undone.`)) {
       const updatedCustomers = customers.filter(customer => customer.id !== customerId);
       setCustomers(updatedCustomers);
       localStorage.setItem('customerRegistrations', JSON.stringify(updatedCustomers));
@@ -103,3 +103,5 @@ export default function ViewCustomers() {
     </div>
   );
 }
+
+
